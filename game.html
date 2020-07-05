@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="game.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
+
+  <title>Rock, Paper, Scissors</title>
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+<div class="toggle-rules"></div>
+                                          <!-- Rules -->
+  <section id="rules">
+    <div class="rules-img hide desktop container-fluid">
+      <div class="row">
+        <div class="col-6 to-left">
+          <h3 class="rules-title">RULES</h3>
+        </div>
+        <div class="col-6 to-right">
+          <img src="images/icon-close.svg" alt="" class="closebt" type="button">
+        </div>
+      </div>
+      <img src="images/image-rules-bonus.svg" alt="">
+    </div>
+
+    <div class="rules-img hide mobile container-fluid">
+          <h3 class="rules-title">RULES</h3>
+          <img src="images/image-rules-bonus.svg" alt="" >
+          <br><br>
+          <img src="images/icon-close.svg" alt="" class="closebt" type="button">
+    </div>
+  </section>
+
+                                                <!-- Game Title -->
+  <section id="game-head">
+    <div class="container-fluid game-title">
+      <div class="row game-head">
+        <div class="col-6">
+          <div class="title">
+            <img src="images/logo-bonus.svg" alt="logo">
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="score-card">
+            <p class="score-title">SCORE</p>
+            <h1 class="score">0</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+                                                          <!-- Play Area -->
+
+<section id="play-game" class="">
+        <div class="play">
+          <div class="game-obj scissors pent-topv" id="scissors" type="button">
+            <div class="white-area">
+              <img src="images/icon-scissors.svg" alt="paper">
+            </div>
+          </div>
+          <div class="row gamerow top">
+            <div class="col-6 to-left">
+              <div class="game-obj spock" id="spock" type="button">
+                <div class="white-area">
+                  <img src="images/icon-spock.svg" alt="paper">
+                </div>
+              </div>
+            </div>
+            <div class="col-6 to-right">
+              <div class="game-obj paper" id="paper" type="button">
+                <div class="white-area">
+                  <img src="images/icon-paper.svg" alt="scissors">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="triangle">
+            <img src="images/bg-pentagon.svg" alt="logo">
+          </div>
+
+          <div class="row gamerow bottom">
+            <div class="col-6 to-left">
+              <div class="game-obj lizard" id="lizard" type="button">
+                <div class="white-area">
+                  <img src="images/icon-lizard.svg" alt="paper">
+                </div>
+              </div>
+            </div>
+            <div class="col-6 to-right">
+              <div class="game-obj rock" id="rock" type="button">
+                <div class="white-area">
+                  <img src="images/icon-rock.svg" alt="scissors">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+</section>
+
+                                                      <!-- Result Area -->
+
+<section id="result" class="hide">
+
+  <div class="results">
+    <div class="row">
+      <div class="col-6">
+        <div class="you-chose">
+          <h3>YOU PICKED</h3>
+          <div class="user-choice">
+            <div class="white-area">
+              <img src="images/icon-scissors.svg" alt="user-choice">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6">
+        <div class="i-chose">
+          <h3>THE HOUSE PICKED</h3>
+          <div class="house-choice">
+            <div class="white-area">
+              <img src="images/icon-scissors.svg" alt="user-choice">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="message">
+    <h1>MESSAGE</h1>
+    <p type="button" name="button" class="play-again">PLAY AGAIN</p>
+  </div>
+
+</section>
+
+                                            <!-- Rules Button -->
+
+<div class="rules">
+<p type="button" class="rules-button">RULES</p>
+</div>
+
+<br><br><br><br>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/2802harsh">Harshdeep Singh Pruthi</a>.
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="game.js" charset="utf-8"></script>
+</body>
+</html>

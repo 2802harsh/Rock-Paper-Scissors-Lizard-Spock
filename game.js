@@ -114,10 +114,10 @@ $(".play-again").on("click", function(){
 });
 
 $(".rules").on("click", function(){
-  $(".rules-img").removeClass("hide");
+  $(".rules-disp").removeClass("hide");
   $(".toggle-rules").addClass("blackout");
 });
 $(".closebt").on("click", function(){
-  $(".rules-img").addClass("hide");
+  $(".rules-disp").addClass("hide");
   $(".toggle-rules").removeClass("blackout");
 });

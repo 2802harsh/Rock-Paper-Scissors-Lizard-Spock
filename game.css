@@ -248,26 +248,26 @@ body{
 
 .win-effect-left{
   position:absolute;
-  width:100vh;
-  height: 100vh;
+  width:80vh;
+  height: 80vh;
   border-radius: 50%;
   left: 70px;
   top: 75px;
   /* top: -15vh; */
-  margin: -50vh 0 0 -50vh;
+  margin: -40vh 0 0 -40vh;
   z-index: -1;
   background: radial-gradient(ellipse at center, rgba(227,227,227,1) 0%, rgba(171,171,171,0.94) 4%, rgba(191,191,191,0.88) 8%, rgba(201,201,201,0.82) 12%, rgba(148,143,148,0.75) 16%, rgba(189,189,189,0.68) 21%, rgba(163,160,163,0.62) 25%, rgba(148,148,148,0.55) 29%, rgba(179,179,179,0.49) 33%, rgba(143,143,143,0.43) 37%, rgba(173,173,173,0.37) 41%, rgba(148,148,148,0.29) 46%, rgba(191,191,191,0.23) 50%, rgba(158,158,158,0.17) 54%, rgba(158,158,158,0.11) 58%, rgba(184,184,184,0.05) 62%, rgba(153,153,153,0) 65%, rgba(143,143,143,0) 66%, rgba(176,176,176,0) 71%, rgba(255,255,255,0) 100%);
 }
 
 .win-effect-right{
   position:absolute;
-  width:100vh;
-  height: 100vh;
+  width:80vh;
+  height: 80vh;
   border-radius: 50%;
   right: 70px;
   top: 75px;
   /* top: -15vh; */
-  margin: -50vh -50vh 0 0;
+  margin: -40vh -40vh 0 0;
   z-index: -1;
   background: radial-gradient(ellipse at center, rgba(227,227,227,1) 0%, rgba(171,171,171,0.94) 4%, rgba(191,191,191,0.88) 8%, rgba(201,201,201,0.82) 12%, rgba(148,143,148,0.75) 16%, rgba(189,189,189,0.68) 21%, rgba(163,160,163,0.62) 25%, rgba(148,148,148,0.55) 29%, rgba(179,179,179,0.49) 33%, rgba(143,143,143,0.43) 37%, rgba(173,173,173,0.37) 41%, rgba(148,148,148,0.29) 46%, rgba(191,191,191,0.23) 50%, rgba(158,158,158,0.17) 54%, rgba(158,158,158,0.11) 58%, rgba(184,184,184,0.05) 62%, rgba(153,153,153,0) 65%, rgba(143,143,143,0) 66%, rgba(176,176,176,0) 71%, rgba(255,255,255,0) 100%);
 }

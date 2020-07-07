@@ -13,7 +13,7 @@ $(".game-obj").on("click",function(){
   else if(result===1){message="YOU WIN"}
   else{message="YOU LOSE"}
 
-  print(message);
+  print(message, result);
 
   $(".score").text(points);
 });
@@ -89,7 +89,7 @@ function checkWinner(){
   return result;
 }
 
-function print(msg){
+function print(msg, result){
   $("#play-game").addClass("hide");
   $("#result").removeClass("hide");
 
@@ -103,6 +103,14 @@ function print(msg){
 
   $(".i-chose img").attr("src",houseImg);
   $(".house-choice").addClass(house);
+
+  if(result===1){
+    $(".user-wins").addClass("win-effect-left");
+  }
+  else if(result===-1){
+    $(".house-wins").addClass("win-effect-right");
+  }
+
 }
 
 $(".play-again").on("click", function(){
@@ -111,6 +119,10 @@ $(".play-again").on("click", function(){
 
   $(".user-choice").removeClass(user);
   $(".house-choice").removeClass(house);
+
+  $(".user-wins").removeClass("win-effect-left");
+  $(".house-wins").removeClass("win-effect-right");
+
 });
 
 $(".rules").on("click", function(){

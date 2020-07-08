@@ -106,9 +106,11 @@ function print(msg, result){
 
   if(result===1){
     $(".user-wins").addClass("win-effect-left");
+    $(".play-again").addClass(user+"-col");
   }
   else if(result===-1){
     $(".house-wins").addClass("win-effect-right");
+    $(".play-again").addClass(house+"-col");
   }
 
 }
@@ -122,6 +124,9 @@ $(".play-again").on("click", function(){
 
   $(".user-wins").removeClass("win-effect-left");
   $(".house-wins").removeClass("win-effect-right");
+
+  $(".play-again").removeClass(user+"-col");
+  $(".play-again").removeClass(house+"-col")
 
 });
 
